@@ -1,51 +1,7 @@
 import java.util.Scanner;
  
 class NewNumToWord
-{ /*
-   static String numToWordForAmerica(String str)
-  {
-    String[] digits = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thireteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
-    String[] tens = {"", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
-  
-    String ans = "";
-    if (str.length() == 1) {            // for single digit no
-      int u = Character.getNumericValue(str.charAt(0)); 
-      ans += digits[u];
-    }else if (str.length() == 2) {          // for two digit no
-      int t = Character.getNumericValue(str.charAt(0));
-      int u = Character.getNumericValue(str.charAt(1)); 
-
-      if (t == 1){
-        ans += digits[u+10];
-      }else {
-        ans += tens[t] +" " + digits[u];
-      }  
-    }else if (str.length() == 3) {          // for three digit no
-      int h = Character.getNumericValue(str.charAt(0));
-      int t = Character.getNumericValue(str.charAt(1));
-      int u = Character.getNumericValue(str.charAt(2)); 
-
-      if (h == 0 && (t == 0 && u == 0)) {
-        return "Zero";
-      }
-      if (h == 0) {
-        if (t == 1){
-          ans = digits[h] + digits[u+10];
-        }else {
-          ans = digits[h] + tens[t] +" " + digits[u];
-        }
-      }else{
-        if (t == 1){
-          ans = digits[h] + " Hundred " + digits[u+10];
-        }else {
-          ans = digits[h] + " Hundred " + tens[t] +" " + digits[u];
-        } 
-      }      
-    }
-    
-    return ans;
-  }*/
-
+{ 
   static String numToWord(String str)
   {
     String[] digits = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thireteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
