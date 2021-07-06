@@ -103,7 +103,8 @@
         <option value="4">Edition</option>
     </select>
     
-    <button type="button" onclick="displayInOrder()">Ascending order</button><br>
+    <button type="button" onclick="sortTable(colName.value, this.id)" id="asc">Ascending order</button>
+    <button type="button" onclick="sortTable(colName.value, this.id)" id="desc">Descending order</button>
     
   </body>
 </html>
