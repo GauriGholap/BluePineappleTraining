@@ -1,109 +1,68 @@
-<!DOCTYPE html>
 <html>
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>repl.it</title>
-	<style>
-		table {
-			border-spacing: 0;
-			width: 100%;
-			border: 1px solid #ddd;
-		}
-
-		th {
-			cursor: pointer;
-		}
-
-		th,
-		td {
-			text-align: left;
-			padding: 16px;
-		}
-
-		tr:nth-child(even) {
-			background-color: #f2f2f2
-		}
-	</style>
-	<script src="script.js" type="text/javascript">
-	</script>
+	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-	<a href="complexTable.html">Complex Table</a>
+	<h4>HTML Table Exercise</h4>
 
-	<h4>List of Books</h4>
-	<table id="BooksList">
-		<thead>
-			<tr>
-				<th onclick="sortTable(0)">Book Id</th>
-				<th onclick="sortTable(1)">Book Name</th>
-				<th onclick="sortTable(2)">Publisher</th>
-				<th onclick="sortTable(3)">Author</th>
-				<th onclick="sortTable(4)">Edition</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td id="1">B01</td>
-				<td>Programming in ansi C</td>
-				<td>MC Graw Hill</td>
-				<td>E Balagurursamy</td>
-				<td>Eighth Edition</td>
-			</tr>
-			<tr>
-				<td id="2">B02</td>
-				<td>Object Oriented Programming with C++</td>
-				<td>MC Graw Hill</td>
-				<td>E Balagurursamy</td>
-				<td>Seventh Edition</td>
-			</tr>
-			<tr>
-				<td id="3">B03</td>
-				<td>The Complete Reference of Java programming</td>
-				<td>McGraw-Hill</td>
-				<td>Herbert Schildt</td>
-				<td>Eleventh Edition</td>
-			</tr>
-			<tr>
-				<td id="4">B04</td>
-				<td>Operating System Concepts</td>
-				<td>Wiley</td>
-				<td>Peter Baer Galvin</td>
-				<td>Nineth Edition</td>
-			</tr>
-			<tr>
-				<td id="5">B05</td>
-				<td>Software testing</td>
-				<td>Pearson</td>
-				<td>Ron Patton</td>
-				<td>Second Edition</td>
-			</tr>
-		</tbody>
-		<!-- <tfoot>
-			<tr>
-				<td>Total</td>
-				<td colspan="4">5 Books</td>
-			</tr>
-		</tfoot> -->
-	</table><br>
-
-    Enter Book Id : <input type="number" id="bookId">
-    <button type="button" onclick="clickEventHandler()">Get Info Using row no</button><br>
-    <h4 id="selectedRow"></h4><br>
-
-    Select Column Name : 
-    <select id="colName" onchange="GetSelectedTextValue(this)">
-        <option value=""></option>
-        <option value="0">Book Id</option>
-        <option value="1">Book Name</option>
-        <option value="2">Publisher</option>
-        <option value="3">Author</option>
-        <option value="4">Edition</option>
-    </select>
-    
-    <button type="button" onclick="displayInOrder()">Ascending order</button><br>
-    
-  </body>
-</html>
+	<table>
+		<tr style="background-color : #C0C0C0">
+			<th colspan="4"><strong>A Complex table</strong></th>
+      </tr>
+      <tr style="background-color : #E5E4E2"><strong>
+        <td colspan="2"><strong>Invoice #123456789</strong></td>
+        <td colspan="2"><strong>14 January 2025</strong></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <strong>Pay to: </strong><br>
+          Acme Billing Co.<br>
+          123 Main St.<br>
+          Cityville, NA 12345<br>
+        </td>
+        <td colspan="2">
+          <strong>Customer:</strong><br>
+          John Smith<br>
+          321 Willow Way<br>
+          Southeast Northwestershire, MA 54321
+        </td>
+      </tr>
+      <tr style="background-color : #E5E4E2">        
+        <td><strong>Name / Description</strong></td>
+        <td><strong>Qty.</strong></td>
+        <td><strong>@</strong></td>
+        <td><strong>Cost</strong></td>
+      </tr>
+      <tr>
+        <td>Paper clips</td>
+        <td>1000</td>
+        <td>0.01</td>
+        <td>10.00</td>
+      </tr>
+      <tr>
+        <td>Staples (box)</td>
+        <td>100</td>
+        <td>1.00</td>
+        <td>100.00</td>
+      </tr>
+      <tr>
+        <td colspan="3" style="background-color : #E5E4E2"><strong>Subtotal</strong></td>
+        <td>110.00</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="background-color : #E5E4E2"><strong>Tax</strong></td>
+        <td>8%</td>
+        <td>8.80</td>
+      </tr>
+      </tr>
+      <tr>
+        <td colspan="3" style="background-color : #E5E4E2"><strong>Grand Total</strong></td>
+        <td>$ 118.80</td>
+      </tr>
+    </table>
+    </body></html>
